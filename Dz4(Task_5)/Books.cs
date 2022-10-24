@@ -1,24 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Dz4_Task_5_
 {
     public class Books : Goods
     {
-        private int AmountOfPages;
-        private string PublishingHouse;
-        private string Author;
+        public int AmountOfPages { get; set; }
+        public string PublishingHouse { get; set; }
+        public string Author { get; set; }
 
-        public Books(int amountOfPages, string publishingHouse, string author,
-            int price, string name, string description, string country, string dateOfDelivery)
+        public Books(string amountOfPages, string publishingHouse, string author,
+            string price, string name, string description, string country, DateTime dateOfDelivery)
             : base(price, name, description, country, dateOfDelivery)
         {
-            AmountOfPages = amountOfPages;
-            PublishingHouse = publishingHouse;
-            Author = author;
+            if (!int.TryParse(amountOfPages.ToString(), out _))
+            {
+                MessageBox.Show("Please enter number in \"Amount of pages\" section");
+                return;
+            }
+            AmountOfPages = Convert.ToInt32(amountOfPages);
+            PublishingHouse = publishingHouse ?? throw new ArgumentNullException(nameof(PublishingHouse));
+            Author = author ?? throw new ArgumentNullException(nameof(Author));
         }
     }
 }

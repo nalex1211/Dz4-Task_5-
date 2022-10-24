@@ -1,24 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Dz4_Task_5_
 {
     public class Products : Goods
     {
-        private string ExpirationDate;
-        private int Amount;
-        private string Unit;
+        public string ExpirationDate { get; set; }
+        public int Amount { get; set; }
+        public string Unit { get; set; }
 
-        public Products(string expirationDate, int amount, string unit,
-            int price, string name, string description, string country, string dateOfDelivery)
+        public Products(string expirationDate, string amount, string unit,
+            string price, string name, string description, string country, DateTime dateOfDelivery)
             : base(price, name, description, country, dateOfDelivery)
         {
-            ExpirationDate = expirationDate;
-            Amount = amount;
-            Unit = unit;
+            if (!int.TryParse(amount, out _))
+            {
+                MessageBox.Show("Please enter number in \"Amount\" section");
+                return;
+            }
+            ExpirationDate = expirationDate ?? throw new ArgumentNullException(nameof(ExpirationDate));
+            Amount = Convert.ToInt32(amount);
+            Unit = unit ?? throw new ArgumentNullException(nameof(Unit));
         }
     }
 }

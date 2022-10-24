@@ -28,18 +28,16 @@
         private void InitializeComponent()
         {
             this.btnAdd = new System.Windows.Forms.Button();
-            this.txtAuthor = new System.Windows.Forms.TextBox();
+            this.txtExpiration = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtHouse = new System.Windows.Forms.TextBox();
+            this.txtUnit = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtAmount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDateOfDelivery = new System.Windows.Forms.TextBox();
             this.txtCountry = new System.Windows.Forms.TextBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,7 +47,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAdd.Location = new System.Drawing.Point(355, 496);
+            this.btnAdd.Location = new System.Drawing.Point(355, 418);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(122, 49);
             this.btnAdd.TabIndex = 34;
@@ -57,37 +55,37 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // txtAuthor
+            // txtExpiration
             // 
-            this.txtAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtAuthor.Location = new System.Drawing.Point(211, 438);
-            this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(266, 35);
-            this.txtAuthor.TabIndex = 33;
+            this.txtExpiration.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtExpiration.Location = new System.Drawing.Point(211, 360);
+            this.txtExpiration.Name = "txtExpiration";
+            this.txtExpiration.Size = new System.Drawing.Size(266, 35);
+            this.txtExpiration.TabIndex = 33;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(12, 444);
+            this.label8.Location = new System.Drawing.Point(12, 366);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(176, 29);
             this.label8.TabIndex = 32;
             this.label8.Text = "Expiration Date";
             // 
-            // txtHouse
+            // txtUnit
             // 
-            this.txtHouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtHouse.Location = new System.Drawing.Point(211, 379);
-            this.txtHouse.Name = "txtHouse";
-            this.txtHouse.Size = new System.Drawing.Size(266, 35);
-            this.txtHouse.TabIndex = 31;
+            this.txtUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtUnit.Location = new System.Drawing.Point(211, 301);
+            this.txtUnit.Name = "txtUnit";
+            this.txtUnit.Size = new System.Drawing.Size(266, 35);
+            this.txtUnit.TabIndex = 31;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(12, 379);
+            this.label7.Location = new System.Drawing.Point(12, 301);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 29);
             this.label7.TabIndex = 30;
@@ -96,7 +94,7 @@
             // txtAmount
             // 
             this.txtAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtAmount.Location = new System.Drawing.Point(211, 320);
+            this.txtAmount.Location = new System.Drawing.Point(211, 242);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(266, 35);
             this.txtAmount.TabIndex = 29;
@@ -105,19 +103,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(12, 320);
+            this.label6.Location = new System.Drawing.Point(12, 242);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 29);
             this.label6.TabIndex = 28;
             this.label6.Text = "Amount";
-            // 
-            // txtDateOfDelivery
-            // 
-            this.txtDateOfDelivery.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtDateOfDelivery.Location = new System.Drawing.Point(211, 264);
-            this.txtDateOfDelivery.Name = "txtDateOfDelivery";
-            this.txtDateOfDelivery.Size = new System.Drawing.Size(266, 35);
-            this.txtDateOfDelivery.TabIndex = 27;
             // 
             // txtCountry
             // 
@@ -150,16 +140,6 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(266, 35);
             this.txtPrice.TabIndex = 23;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(12, 267);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 29);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Date of delivery";
             // 
             // label4
             // 
@@ -205,20 +185,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 604);
+            this.ClientSize = new System.Drawing.Size(515, 493);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtAuthor);
+            this.Controls.Add(this.txtExpiration);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtHouse);
+            this.Controls.Add(this.txtUnit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtDateOfDelivery);
             this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtPrice);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -234,18 +212,16 @@
         #endregion
 
         private System.Windows.Forms.Button btnAdd;
-        public System.Windows.Forms.TextBox txtAuthor;
+        public System.Windows.Forms.TextBox txtExpiration;
         private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox txtHouse;
+        public System.Windows.Forms.TextBox txtUnit;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox txtDateOfDelivery;
         public System.Windows.Forms.TextBox txtCountry;
         public System.Windows.Forms.TextBox txtDescription;
         public System.Windows.Forms.TextBox txtName;
         public System.Windows.Forms.TextBox txtPrice;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
