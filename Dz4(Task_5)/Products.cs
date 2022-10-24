@@ -9,8 +9,14 @@ namespace Dz4_Task_5_
         public int Amount { get; set; }
         public string Unit { get; set; }
 
-        public Products(string expirationDate, string amount, string unit,
-            string price, string name, string description, string country, DateTime dateOfDelivery)
+        public Products(string expirationDate,
+            string amount,
+            string unit,
+            string price,
+            string name,
+            string description,
+            string country,
+            DateTime dateOfDelivery)
             : base(price, name, description, country, dateOfDelivery)
         {
             if (!int.TryParse(amount, out _))

@@ -16,6 +16,7 @@ namespace Dz4_Task_5_
             List<Books> lstOfBooks = new List<Books>();
             Form2 form = new Form2();
             form.ShowDialog();
+
             var book = new Books(
                 form.txtAmount.Text,
                 form.txtHouse.Text,
@@ -39,6 +40,7 @@ namespace Dz4_Task_5_
             List<Products> lstOfProducts = new List<Products>();
             Form3 form = new Form3();
             form.ShowDialog();
+
             var product = new Products(
                 form.txtExpiration.Text,
                 form.txtAmount.Text,

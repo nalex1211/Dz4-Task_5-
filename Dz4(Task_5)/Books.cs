@@ -9,8 +9,14 @@ namespace Dz4_Task_5_
         public string PublishingHouse { get; set; }
         public string Author { get; set; }
 
-        public Books(string amountOfPages, string publishingHouse, string author,
-            string price, string name, string description, string country, DateTime dateOfDelivery)
+        public Books(string amountOfPages,
+            string publishingHouse,
+            string author,
+            string price,
+            string name,
+            string description,
+            string country,
+            DateTime dateOfDelivery)
             : base(price, name, description, country, dateOfDelivery)
         {
             if (!int.TryParse(amountOfPages.ToString(), out _))
